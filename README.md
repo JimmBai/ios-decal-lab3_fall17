@@ -4,6 +4,8 @@ In today's lab, we'll be creating a simple multiview app using navigation contro
 
 ![alt text](/README-images/previewSnap.png)
 
+This lab will build the basics for your snapChat project. It aims to help you learn more about navigation controllers and tab bar controllers.
+
 To get started, first clone this repository onto your own computer:
 	
 	git clone https://github.com/iosdecal/ios-decal-lab3
@@ -32,11 +34,21 @@ Creating a view in the storyboard with only an image and a button in it. Using a
 ## Question 2 - Connecting Views ##
 ### Question 2: part 1 ###
 
-Create a navigation convtroller view in the storyboard and then create a segue from the navigation controller to the `Snapchat 2.0` view. 
+Create a navigation controller view in the storyboard and then create a segue from the navigation controller to the `Snapchat 2.0` view. 
 
 ### Question 2: part 2 ###
 
 Create a segue from `Snapchat 2.0` to `Image Preview Controller` and give the segue a name.
+
+### Question 2: part 3 ###
+
+Create a tab bar controller view in the storyboard and a new blank view. Connect the tab bar controller to the blank view and the navigation controller view. If you connect them correctly, you should see two tabs at the bottom of the tab bar controller view. 
+
+The default tab icons are not visually helpful for users. Customize the tab icons so that it looks like the image in the Overview section.
+
+Notes: 
+1. We've provided the icons in the Assets, so don't need to donwload one or create your own icons.
+2. The blank view is just a placeholder. Don't worry. You'll build more stuff in the snapChat project. 
 
 ## Question 3 - View Transition ##
 
@@ -45,7 +57,7 @@ Now we have the storyboard structure ready. We need to implement the underlying 
 ### part 1: Prepare for segue ###
 Whenever a user taps an image in the initial screen, we want the app to show the selected image in a new view. 
 
-The new view creation we've done in Q1 but we have not implemented the transistion to the new view and a way for the new view to know which image to display. In this part, you'll need to implement to achieve those 2 goals. You'll need to edit both `imagePickerController.swift` and `imagePreviewController.swift`.
+The new view creation we've done in Q1 but we have not implemented the transition to the new view and a way for the new view to know which image to display. In this part, you'll need to implement to achieve those 2 goals. You'll need to edit both `imagePickerController.swift` and `imagePreviewController.swift`.
 
 In `imagePickerController.swift`, we've abstracted away the collection view and given you the method, which will get called everytime the user taps an image - Feel free to add any other methods or instance variables you may need:
 

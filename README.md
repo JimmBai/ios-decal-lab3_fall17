@@ -55,7 +55,7 @@ In `imagePickerController.swift`, we've abstracted away the collection view and 
 
 When the user wants to select another image, there are 2 ways to go back to the initial screen: one is to tap the arrow in the top navigation bar; the other is to push the button below the image.
 
-You'll need to implement this button functionality. Make sure that whenever the user taps the button, he/she will be back to the initial image selection view.  
+You'll need to implement the button functionality. Make sure that whenever the user taps the button, he/she will be back to the initial image selection view.  
 
 ## Grading ##
 
